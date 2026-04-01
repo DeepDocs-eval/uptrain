@@ -18,8 +18,8 @@ In this notebook, we will walk you through using UpTrain to evaluate LLM-generat
 You can get your Zeno API keys [here](https://hub.zenoml.com/account) and OpenAI API key [here](https://platform.openai.com/api-keys)
 
 ```python
-ZENO_API_KEY = "sk-***************"
-OPENAI_API_KEY = "zen_***************"
+ZENO_API_KEY = "zeno_***************"
+OPENAI_API_KEY = "sk-***************"
 ```
 
 **Let's create a sample data**
@@ -59,7 +59,7 @@ data = [
 ```
 ### Run Evaluations using UpTrain Open-Source Software (OSS)
 
-We have used the following 3 metrics from UpTrain's library:
+We have used the following 4 metrics from UpTrain's library:
 
 1. [Context Relevance](/predefined-evaluations/context-awareness/context-relevance): Evaluates how relevant the retrieved context is to the question specified.
 
@@ -67,7 +67,7 @@ We have used the following 3 metrics from UpTrain's library:
 
 3. [Factual Accuracy](/predefined-evaluations/context-awareness/factual-accuracy): Evaluates whether the response generated is factually correct and grounded by the provided context.
 
-3. [Response Relevance](/predefined-evaluations/response-quality/response-relevance): Evaluates how relevant the generated response was to the question specified.
+    * [Response Relevance](/predefined-evaluations/response-quality/response-relevance): Evaluates how relevant the generated response was to the question specified.
 
 You can look at the complete list of UpTrain's supported metrics [here](/predefined-evaluations/overview)
 

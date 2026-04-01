@@ -32,7 +32,7 @@ You can use your Mistral API key to run LLM evaluations using UpTrain.
   </Step>
   <Step title="Enter your Mistral API Key">
     ```python
-    OPENAI_API_KEY = "sk-*********************"
+MISTRAL_API_KEY = "sk-*********************"
     ```
   </Step>
 
@@ -58,7 +58,7 @@ You can use your Mistral API key to run LLM evaluations using UpTrain.
       checks=[Evals.CONTEXT_RELEVANCE, Evals.RESPONSE_RELEVANCE]
     )
     ```
-  We have used the following 3 metrics from UpTrain's library:
+  We have used the following 2 metrics from UpTrain's library:
 
   1. [Context Relevance](/predefined-evaluations/context-awareness/context-relevance): Evaluates how relevant the retrieved context is to the question specified.
   2. [Response Relevance](/predefined-evaluations/response-quality/response-relevance): Evaluates how relevant the generated response was to the question specified.

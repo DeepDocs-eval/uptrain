@@ -13,7 +13,7 @@ Custom prompts help you grade your model the way you want it.
 Parameters:
 - `prompt`:	Evaluation prompt used to generate the grade
 - `choices`:	List of choices/grades to choose from
-- `choices_scores`:	Scores associated with each choice
+- `choice_scores`: Scores associated with each choice
 - `eval_type`:	One of ["classify", "cot_classify"], determines if chain-of-thought prompting is to be applied or not
 - `prompt_var_to_column_mapping (optional)`: mapping between variables defined in the prompt vs column names in the data
 
@@ -60,6 +60,7 @@ results = eval_llm.evaluate(
         prompt = prompt,
         choices = choices,
         choice_scores = choice_scores,
+        eval_type = "classify",
         prompt_var_to_column_mapping = prompt_var_to_column_mapping
     )]
 )    
