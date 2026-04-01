@@ -20,7 +20,7 @@ OPENAI_API_KEY = "sk-********************"  # Insert your OpenAI key here
 data = [{
     "question": "How can I install the Pandas package in Python?",
     "context": "The Pandas package can easily be installed on Python by using: ```pip install pandas```",
-    "response": "To install the Pandas package on Python use : ```import pandas as pd```"
+    "response": "To install the Pandas package on Python use : ```import pandas as pd```",
 }]
 
 eval_llm = EvalLLM(openai_api_key=OPENAI_API_KEY)
@@ -50,7 +50,7 @@ The context mentioned `pip install pandas` as the code required to install Panda
 
 While the generated response mentions `import pandas as pd` which is not mentioned in the context. 
 
-Resulting in a low code hallucination score.
+Resulting in a high code hallucination score.
 
 
 <CardGroup cols={2}>

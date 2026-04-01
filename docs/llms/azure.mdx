@@ -40,7 +40,7 @@ You can use your Azure API key to run LLM evaluations using UpTrain.
 
   <Step title="Create an EvalLLM Evaluator">
     ```python
-    settings = Settings(model = 'azure/*', azure_api_key=AZURE_API_KEY, azure_api_version=AZURE_API_VERSION, azure_api_base=AZURE_API_BASE)
+    settings = Settings(model = 'azure/gpt-35-turbo', azure_api_key=AZURE_API_KEY, azure_api_version=AZURE_API_VERSION, azure_api_base=AZURE_API_BASE)
     eval_llm = EvalLLM(settings)
     ```
     <Note>
